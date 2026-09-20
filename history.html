@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>History</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="dsa.js"></script>
+
+<script src="app.js" defer></script>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+Payroll Management System
+</div>
+
+<ul>
+
+<li><a href="index.html">Dashboard</a></li>
+
+<li><a href="employees.html">Employees</a></li>
+
+<li><a href="payroll.html">Payroll</a></li>
+
+<li><a href="reports.html">Reports</a></li>
+
+<li><a href="history.html" class="active">History</a></li>
+
+</ul>
+
+</nav>
+
+<section class="container">
+
+<h1>History & Undo</h1>
+
+<p>
+
+This page stores every Add, Update and Delete operation using a
+<b>Stack</b>.
+
+</p>
+
+<div class="buttons">
+
+<button onclick="undoLastAction()">
+
+Undo Last Action
+
+</button>
+
+<button onclick="clearHistory()">
+
+Clear History
+
+</button>
+
+</div>
+
+<h2>Action History</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Operation</th>
+
+<th>Employee</th>
+
+<th>Time</th>
+
+</tr>
+
+</thead>
+
+<tbody id="historyTable">
+
+</tbody>
+
+</table>
+
+<hr>
+
+<h2>Linked List Traversal</h2>
+
+<button onclick="displayLinkedList()">
+
+Show Employee Linked List
+
+</button>
+
+<div id="linkedListDisplay" class="linked-list">
+
+No Data
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>
+
+History Module
+
+</h3>
+
+<p>
+
+Uses Stack + Linked List
+
+</p>
+
+</footer>
+
+</body>
+
+</html>

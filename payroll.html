@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Payroll Processing</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="dsa.js"></script>
+<script src="app.js" defer></script>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+Payroll Management System
+</div>
+
+<ul>
+
+<li><a href="index.html">Dashboard</a></li>
+<li><a href="employees.html">Employees</a></li>
+<li><a href="payroll.html" class="active">Payroll</a></li>
+<li><a href="reports.html">Reports</a></li>
+<li><a href="history.html">History</a></li>
+
+</ul>
+
+</nav>
+
+<section class="container">
+
+<h1>Payroll Processing</h1>
+
+<p>
+Click the button below to process employee salaries using a <b>Queue</b>.
+</p>
+
+<button onclick="processPayroll()">
+Process Payroll
+</button>
+
+<h2>Payroll Queue</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Employee ID</th>
+<th>Name</th>
+<th>Gross Salary</th>
+<th>Net Salary</th>
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody id="payrollTable">
+
+</tbody>
+
+</table>
+
+<div class="summary">
+
+<h2>Payroll Summary</h2>
+
+<p>Total Employees :
+<span id="payrollEmployees">0</span>
+</p>
+
+<p>Total Gross Salary :
+₹<span id="grossTotal">0</span>
+</p>
+
+<p>Total Net Salary :
+₹<span id="netTotal">0</span>
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>
+Payroll Module using Queue + Recursion
+</h3>
+
+</footer>
+
+</body>
+
+</html>

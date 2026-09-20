@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Employee Management</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="dsa.js"></script>
+
+<script src="app.js" defer></script>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+Payroll Management System
+</div>
+
+<ul>
+
+<li><a href="index.html">Dashboard</a></li>
+
+<li><a href="employees.html">Employees</a></li>
+
+<li><a href="payroll.html">Payroll</a></li>
+
+<li><a href="reports.html">Reports</a></li>
+
+<li><a href="history.html">History</a></li>
+
+</ul>
+
+</nav>
+
+<section class="container">
+
+<h1>Employee Management</h1>
+
+<div class="form">
+
+<input
+type="number"
+id="empId"
+placeholder="Employee ID">
+
+<input
+type="text"
+id="empName"
+placeholder="Employee Name">
+
+<input
+type="text"
+id="empDept"
+placeholder="Department">
+
+<input
+type="number"
+id="empSalary"
+placeholder="Basic Salary">
+
+<input
+type="number"
+id="empAllowance"
+placeholder="Allowance">
+
+<input
+type="number"
+id="empDeduction"
+placeholder="Deduction">
+
+<div class="buttons">
+
+<button onclick="addEmployee()">
+
+Add Employee
+
+</button>
+
+<button onclick="updateEmployee()">
+
+Update Employee
+
+</button>
+
+<button onclick="clearForm()">
+
+Clear
+
+</button>
+
+</div>
+
+</div>
+
+<hr>
+
+<h2>Search Employee</h2>
+
+<input
+type="text"
+id="searchEmployee"
+placeholder="Search by Name"
+onkeyup="searchEmployee()">
+
+<hr>
+
+<h2>Employee Records</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Name</th>
+
+<th>Department</th>
+
+<th>Salary</th>
+
+<th>Allowance</th>
+
+<th>Deduction</th>
+
+<th>Gross Salary</th>
+
+<th>Net Salary</th>
+
+<th>Actions</th>
+
+</tr>
+
+</thead>
+
+<tbody id="employeeTable">
+
+</tbody>
+
+</table>
+
+</section>
+
+<footer>
+
+<h3>
+
+Employee Management Module
+
+</h3>
+
+<p>
+
+Uses Arrays + Linked List
+
+</p>
+
+</footer>
+
+</body>
+
+</html>

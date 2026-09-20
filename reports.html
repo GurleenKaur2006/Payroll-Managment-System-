@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reports</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="dsa.js"></script>
+<script src="app.js" defer></script>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+Payroll Management System
+</div>
+
+<ul>
+
+<li><a href="index.html">Dashboard</a></li>
+<li><a href="employees.html">Employees</a></li>
+<li><a href="payroll.html">Payroll</a></li>
+<li><a href="reports.html" class="active">Reports</a></li>
+<li><a href="history.html">History</a></li>
+
+</ul>
+
+</nav>
+
+<section class="container">
+
+<h1>Employee Reports</h1>
+
+<div class="buttons">
+
+<button onclick="sortSalary()">
+Sort by Salary
+</button>
+
+<button onclick="sortName()">
+Sort by Name
+</button>
+
+<button onclick="sortId()">
+Sort by ID
+</button>
+
+</div>
+
+<div class="reportCards">
+
+<div class="card">
+
+<h2>Highest Salary</h2>
+
+<h1 id="reportHighest">
+₹0
+</h1>
+
+</div>
+
+<div class="card">
+
+<h2>Lowest Salary</h2>
+
+<h1 id="reportLowest">
+₹0
+</h1>
+
+</div>
+
+<div class="card">
+
+<h2>Average Salary</h2>
+
+<h1 id="reportAverage">
+₹0
+</h1>
+
+</div>
+
+<div class="card">
+
+<h2>Total Payroll</h2>
+
+<h1 id="reportTotal">
+₹0
+</h1>
+
+</div>
+
+</div>
+
+<h2>Employee List</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Name</th>
+
+<th>Department</th>
+
+<th>Net Salary</th>
+
+</tr>
+
+</thead>
+
+<tbody id="reportTable">
+
+</tbody>
+
+</table>
+
+</section>
+
+<footer>
+
+<h3>
+
+Reports Module
+
+</h3>
+
+<p>
+
+Uses Merge Sort
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
